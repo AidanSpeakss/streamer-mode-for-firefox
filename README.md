@@ -1,6 +1,13 @@
 # hidemypii
 Firefox extension to remove PII (personally identifying information) from pages before it's visibible.
 
+**Installation:**  
+1. Download Zip file "HideMyPII.zip"
+2. Go to: about:debugging#/runtime/this-firefox in a new tab.
+3. Click on "Load Temporary Add-on.."
+4. Select "HideMyPII.zip"
+5. Your set!
+
 **Known Issues:**  
 - Modifies URL's.  
 - Must be manaully updated when new unsupported sites are reported.  
