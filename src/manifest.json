@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "HideMyPII",
+  "version": "0.1",
+  "description": "Removes personal information from pages before they are visible, to protect yourself when sharing screen.",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "clipboardWrite",
+    "cookies",
+    "downloads",
+    "notifications",
+    "storage",
+    "tabs",
+    "unlimitedStorage",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "content_scripts": [
+    {
+      "exclude_matches": [ "http://*.facebook.com/*", "https://*.facebook.com/*"],
+      "matches":   [ "http://*/*", "https://*/*", "file:///*"],
+      "js":        [ "background.js" ]
+    },
+    {
+      "matches":   [ "http://*/*", "https://*/*", "file:///*"],
+      "css":        [ "background.css" ],
+      "run_at": "document_start"
+    },
+    {
+      "matches":   [ "http://*.facebook.com/*", "https://*.facebook.com/*"],
+      "js":        [ "exclude.js" ]
+    }
+  ]
+}
