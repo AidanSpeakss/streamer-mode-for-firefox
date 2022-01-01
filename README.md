@@ -1,6 +1,8 @@
 # Streamer Mode for Discord
 Hides personal information from pages, similar to Discord's Streamer mode.
 
+Add to Firefox: https://addons.mozilla.org/en-US/firefox/addon/streamermode/
+
 
 **Known Issues:**
 - Must be manaully updated when new unsupported sites are reported.  
