@@ -1,23 +1,24 @@
 {
+  "background": {
+    "scripts": ["background.js"]
+  },
   "manifest_version": 2,
-  "name": "HideMyPII",
-  "version": "0.1",
-  "description": "Removes personal information from pages before they are visible, to protect yourself when sharing screen.",
+  "name": "Streamer Mode for Firefox",
+  "version": "0.2",
+  "description": "Hides personal information from pages, similar to Discord's Streamer mode.",
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "Streamer Mode for Firefox!"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": false
   },
   "permissions": [
-    "<all_urls>",
-    "clipboardWrite",
-    "cookies",
-    "downloads",
-    "notifications",
-    "storage",
-    "tabs",
-    "unlimitedStorage",
-    "webNavigation",
-    "webRequest",
-    "webRequestBlocking"
+    "storage"
   ],
   "content_scripts": [
     {
@@ -34,5 +35,12 @@
       "matches":   [ "http://*.facebook.com/*", "https://*.facebook.com/*"],
       "js":        [ "exclude.js" ]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{8a05d8ec-f62f-4bcb-a93c-b2d606fb562f}",
+      "strict_min_version": "42.0"
+    }
+  }
+
 }

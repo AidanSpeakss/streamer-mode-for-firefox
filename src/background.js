@@ -1,4 +1,4 @@
-let h1 = document.createElement("h1");
+let data = [];
 function getElementsByXPath(xpath){
     let results = [];
     let query = document.evaluate(xpath, document || document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
@@ -8,39 +8,58 @@ function getElementsByXPath(xpath){
     return results;
 }
 
-function postload(){
-    document.querySelector("#rt9879qaw4789uh").style.display = "none";
-    h1.style.display = "none !important"
-    document.body.style.display = "block";
-}
 
 function removePII(){
-    getElementsByXPath("//*[contains(text(), 'Aidan')]").forEach( ele => { console.log("Item Removed"); ele.innerText = ele.innerText.replace('Aidan', "")});
-    postload();
-}
+    getElementsByXPath("//*[contains(text(), '')]").forEach( ele => {
+            if(ele.hasChildNodes()){
+                ele.childNodes.forEach( child => {
+                        if(child.nodeName == "#text" || child.nodeName == "A"){
+                            data.forEach( pii => {
+                                if(child.textContent.includes(pii)){
+                                    child.textContent = child.textContent.replace(pii, "");
+                                }
+                            })
 
-function preLoad(){
-    h1.id = "rt9879qaw4789uh";
-    h1.innerText = "Looking for and removing personal information...";
-    h1.style.width = "100%";
-    h1.style.height = "100%";
-    h1.style.display = "block"
-    document.body.appendChild(h1);
-    removePII();
+                        } else if(child.nodeName == "A") {
+                        }
+                    }
+                )
+            } else {
+                if(ele.nodeName == "#text"){
+                    data.forEach( pii => {
+                        if(ele.textContent.includes(pii)){
+                            ele.textContent = ele.textContent.replace(pii, "");
+                        }
+                    })
+                }
+            }
+        }
+    );
+    document.body.style.display = "block";
 }
 
 
 function childrenEater(children){
     if(children.hasChildNodes()){
         children.childNodes.forEach( child => {
-             if (children.innerText.includes('Aidan')) {
-                 children.innerHTML = children.innerHTML.replace('Aidan', "");
-             }
-            childrenEater(child);
-        })
+            if (child.hasChildNodes()) {
+                childrenEater(child);
+            } else if (child.parentElement.localName !== "a") {
+                data.forEach(temp => {
+                    if (child.textContent.includes(temp)) {
+                        child.textContent = child.textContent.replace(temp, "");
+                    }
+                });
+            }
+        });
     } else {
-        if (children.innerText.includes('Aidan')) {
-            children.innerText = children.innerText.replace('Aidan', "");
+        let child = children;
+        if(child.parentElement.localName !== "a"){
+            data.forEach(temp => {
+                if (child.textContent.includes(temp)) {
+                    child.textContent = child.textContent.replace(temp, "");
+                }
+            });
         }
     }
 
@@ -60,4 +79,13 @@ mutationObserver.observe(document.body, {
     subtree: true
 });
 
-preLoad();
+var storageItemPii = browser.storage.local.get('pii');
+storageItemPii.then((res) => {
+    if(res.pii){
+        let tempArray = res.pii.split(",");
+        tempArray.forEach( temp =>{ data.push(temp); });
+        removePII();
+    } else {
+        document.body.style.display = "block";
+    }
+});
