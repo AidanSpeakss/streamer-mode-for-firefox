@@ -3,6 +3,11 @@ Hides personal information from pages, similar to Discord's Streamer mode.
 
 Add to Firefox: https://addons.mozilla.org/en-US/firefox/addon/streamermode/
 
+Features:
+- Ensures page do not display your personal information, EVEN while and before loading.
+- Prevents changes to the page from showing your personal information.
+- Ability to specifiy any string as personal information.
+- Warns users if a page is not fully supported by the extension, to prevent them from accidently leaking their information
 
 **Known Issues:**
 - Must be manaully updated when new unsupported sites are reported.  
