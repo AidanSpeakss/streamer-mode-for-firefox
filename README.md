@@ -22,6 +22,7 @@ v1.5:
 - Removed console.logs from code
 
 **Upcoming Updates:**
+- Make options page more accessible.
 - Find and implement workaround to hide tab title during load.
 - Fix for "Doesn't modify text in certain circumstances"
 - External site for unsupported URL's and module to check site every 24 hours for new unsupported URL's and store them in browser storage
