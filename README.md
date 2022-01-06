@@ -12,9 +12,16 @@ Add to Firefox: https://addons.mozilla.org/en-US/firefox/addon/streamermode/
 **Known Issues:**
 - Must be manaully updated when new unsupported sites are reported.  
 - Doesn't support all sites
-- Doesn't modify text in certain circumstances
-- Tab title isn't checked for personal information.
 - Tab title is still visible during load, leaking personal information contained in the title.
+
+(New) v1.6:
+- Fix for "Doesn't modify text in certain circumstances"
+- Fixed issue with leading/trailing whitespaces being considered part of user inputted personal information
+  - Leading/trailing white spaces are now removed when hit submit on the options page (Ex. " First Last " becomes "First last")
+  - Intentional whitespace such as between two words (ex. "First last") is preserved with this new whitespace cleansing feature
+- Options page is now accessible by clicking on the icon in your toolbar
+- Small fixes/improvements
+  - Clicking submit now updates the #managed-pii area in the options page.
 
 v1.5:
 - Released on the addon store
@@ -23,10 +30,7 @@ v1.5:
 - Removed console.logs from code
 
 **Upcoming Updates:**
-- Add check for tab title.
-- Make options page more accessible.
 - Find and implement workaround to hide tab title during load.
-- Fix for "Doesn't modify text in certain circumstances"
 - External site for unsupported URL's and module to check site every 24 hours for new unsupported URL's and store them in browser storage
 - Performance Improvements
 - Button to toggle tool on/off
