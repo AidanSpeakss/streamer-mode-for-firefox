@@ -1,0 +1,8 @@
+v1.6
+- Fix for "Doesn't modify text in certain circumstances"
+- Fixed issue with leading/trailing whitespaces being considered part of user inputted personal information
+  - Leading/trailing white spaces are now removed when hit submit on the options page (Ex. " First Last " becomes "First last")
+  - Intentional whitespace such as between two words (ex. "First last") is preserved with this new whitespace cleansing feature
+- Options page is now accessible by clicking on the icon in your toolbar
+- Small fixes/improvements
+  - Clicking submit now updates the #managed-pii area in the options page.
