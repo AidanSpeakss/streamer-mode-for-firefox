@@ -12,7 +12,7 @@ Features:
 **Known Issues:**
 - Must be manaully updated when new unsupported sites are reported.  
 - Doesn't support all sites
-- Doesn't modify text within A elements
+- Doesn't modify text in certain circumstances
 
 v1.5:
 - Released on the addon store
