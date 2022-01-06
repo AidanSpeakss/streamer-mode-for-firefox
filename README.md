@@ -13,6 +13,7 @@ Add to Firefox: https://addons.mozilla.org/en-US/firefox/addon/streamermode/
 - Must be manaully updated when new unsupported sites are reported.  
 - Doesn't support all sites
 - Doesn't modify text in certain circumstances
+- Tab title is still visible during load, leaking personal information contained in the title.
 
 v1.5:
 - Released on the addon store
@@ -21,6 +22,7 @@ v1.5:
 - Removed console.logs from code
 
 **Upcoming Updates:**
+- Find and implement workaround to hide tab title during load.
 - Fix for "Doesn't modify text in certain circumstances"
 - External site for unsupported URL's and module to check site every 24 hours for new unsupported URL's and store them in browser storage
 - Performance Improvements
