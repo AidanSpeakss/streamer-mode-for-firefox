@@ -1,26 +1,21 @@
 function saveOptions(e) {
     let cleansedPII = "";
-    let tempPII = document.querySelector("#pii").value.split(",");
-    tempPII.forEach(temp =>
+    document.querySelector("#pii").value.split(",").forEach(temp =>
         {
             cleansedPII += temp.trim() + ",";
         }
     );
     cleansedPII = cleansedPII.substring(0, cleansedPII.length - 1);
-
     document.querySelector("#pii").value = cleansedPII;
     document.querySelector("#managed-pii").innerText = cleansedPII;
-
     browser.storage.local.set({
         pii: document.querySelector("#pii").value
     });
-
     e.preventDefault();
 }
 
-function restoreOptions() {
+function restoreOptions(){
     let gettingPII = browser.storage.local.get('pii');
-
     gettingPII.then((res) => {
         if(res.pii){
             document.querySelector("#managed-pii").innerText = res.pii;

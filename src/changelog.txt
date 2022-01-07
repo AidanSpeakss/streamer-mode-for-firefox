@@ -1,3 +1,9 @@
+
+v1.6.1
+- Added Facebook back to supported pages
+- Added Google docs to unsupported sites
+- Minor code cleanup/improvements
+
 v1.6
 - Fix for "Doesn't modify text in certain circumstances"
 - Fixed issue with leading/trailing whitespaces being considered part of user inputted personal information

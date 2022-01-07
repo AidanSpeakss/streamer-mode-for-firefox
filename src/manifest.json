@@ -1,10 +1,7 @@
 {
-  "background": {
-    "scripts": ["background.js"]
-  },
   "manifest_version": 2,
   "name": "Streamer Mode for Firefox",
-  "version": "1.6",
+  "version": "1.6.1",
   "description": "Hides personal information from pages, similar to Discord's Streamer mode.",
   "icons": {
     "48": "icons/icon.png"
@@ -23,17 +20,18 @@
   ],
   "content_scripts": [
     {
-      "exclude_matches": [ "http://*.facebook.com/*", "https://*.facebook.com/*"],
+      "exclude_matches": [ "http://docs.google.com/*", "https://docs.google.com/*"],
       "matches":   [ "http://*/*", "https://*/*", "file:///*"],
       "js":        [ "background.js" ]
     },
     {
+      "exclude_matches": [ "http://docs.google.com/*", "https://docs.google.com/*"],
       "matches":   [ "http://*/*", "https://*/*", "file:///*"],
       "css":        [ "background.css" ],
       "run_at": "document_start"
     },
     {
-      "matches":   [ "http://*.facebook.com/*", "https://*.facebook.com/*"],
+      "matches":   [ "http://docs.google.com/document/*", "https://docs.google.com/document/*"],
       "js":        [ "exclude.js" ]
     }
   ],
@@ -42,5 +40,4 @@
       "id": "{8a05d8ec-f62f-4bcb-a93c-b2d606fb562f}"
     }
   }
-
 }
