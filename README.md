@@ -14,7 +14,12 @@ Add to Firefox: https://addons.mozilla.org/en-US/firefox/addon/streamermode/
 - Doesn't support all sites
 - Tab title is still visible during load, leaking personal information contained in the title.
 
-(New) v1.6:
+v1.6.1:
+- Added Facebook back to supported pages
+- Added Google docs to unsupported sites
+- Minor code cleanup/improvements
+
+v1.6:
 - Fix for "Doesn't modify text in certain circumstances"
 - Fixed issue with leading/trailing whitespaces being considered part of user inputted personal information
   - Leading/trailing white spaces are now removed when hit submit on the options page (Ex. " First Last " becomes "First last")
