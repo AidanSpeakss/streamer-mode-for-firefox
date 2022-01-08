@@ -30,9 +30,10 @@ Add to Opera:
 ## Known Issues:
 - Must be updated when new unsupported sites are reported (and manaully updated on Chrome/Opera).  
 - Tab title is still visible during load, leaking personal information contained in the title.
-- PII can be determined by looking for what text is changed (credit: u/cn0MMnb)
+- PII can be determined by looking for what text is changed (Credit: u/cn0MMnb)
 
 ## Upcoming Updates:
+- Regex support (i.e. [0-9][0-9][0-9]\ Street\ Name) (Credit: u/VKNiLive)
 - Implement feature to add randomly generated PII to user settings, to make determining which PII is accurate to the user very difficult.
 - Find and implement workaround to hide tab title during load.
 - External site for unsupported URL's and module to check site every 24 hours for new unsupported URL's and store them in browser storage
