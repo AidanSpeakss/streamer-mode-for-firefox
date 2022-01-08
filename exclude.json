@@ -1,1 +1,2 @@
-youtube.com, docs.google.com
+"https://coronavirus.data.gov.uk/*", "http://coronavirus.data.gov.uk/*", "http://*.docs.google.com/*", "https://*.docs.google.com/*", "http://docs.google.com/*", "https://docs.google.com/*"
+
