@@ -9,7 +9,7 @@ Add to Chrome:
 2. Extract the files into their own folder.
 2. Go to chrome://extensions/
 3. Enable "Developer Mode"
-4. Select "Load unpacked" and select the folder where the files just extracted are.
+4. Select "Load unpacked" and select the folder where the files you just extracted are.
 
 *Note: Make sure your select the folder containing the extension files (i.e. manifest.json, background.js) not a folder containing that folder.*
 
