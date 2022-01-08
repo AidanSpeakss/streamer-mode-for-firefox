@@ -31,7 +31,7 @@ Add to Opera:
 - Must be manaully updated when new unsupported sites are reported.  
 - Tab title is still visible during load, leaking personal information contained in the title.
 - Doesn't work on most Google products (working on fixes for this ASAP)
-- PII can be determined by looking for what text is changed
+- PII can be determined by looking for what text is changed (credit: u/cn0MMnb)
 
 ## Upcoming Updates:
 - Implement feature to add randomly generated PII to user settings, to make determining which PII is accurate to the user very difficult.
