@@ -28,7 +28,7 @@ Add to Opera:
 - Warns users if a page is not fully supported by the extension, to prevent them from accidently leaking their information.
 
 ## Known Issues:
-- Must be manaully updated when new unsupported sites are reported.  
+- Must be updated when new unsupported sites are reported (and manaully updated on Chrome/Opera).  
 - Tab title is still visible during load, leaking personal information contained in the title.
 - Doesn't work on most Google products (working on fixes for this ASAP)
 - PII can be determined by looking for what text is changed (credit: u/cn0MMnb)
