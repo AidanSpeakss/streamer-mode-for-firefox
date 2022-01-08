@@ -2,7 +2,7 @@ let data = [];
 
 function getElementsByXPath(xpath){
     let results = [];
-    let query = document.evaluate(xpath, document || document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+    const query = document.evaluate(xpath,  document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
     for (let i = 0, length = query.snapshotLength; i < length; ++i)
         results.push(query.snapshotItem(i));
     return results;
@@ -10,14 +10,15 @@ function getElementsByXPath(xpath){
 
 function piiSearch(ele){
     data.forEach(pii => {
-        let regEx = new RegExp(pii, "ig");
-        if(ele.textContent.toLowerCase().includes(pii.toLowerCase()))
+        if(ele.textContent.toLowerCase().includes(pii.toLowerCase())) {
+            const regEx = new RegExp(pii, "ig");
             ele.textContent = ele.textContent.replace(regEx, "");
+        }
     })
 }
 
 function removePII(){
-    getElementsByXPath("//*[contains(text(), '')]").forEach( ele => {
+    getElementsByXPath("//text()").forEach( ele => {
         if (ele.hasChildNodes())
             childrenEater(ele);
         else
@@ -35,7 +36,7 @@ function childrenEater(parent){
     });
 }
 
-let mutationObserver = new MutationObserver(function (mutations) {
+const mutationObserver = new MutationObserver(function (mutations) {
     mutations.forEach(function (mutation) {
         if(mutation.target.hasChildNodes())
             childrenEater(mutation.target);
@@ -49,7 +50,7 @@ mutationObserver.observe(document.body, {
     subtree: true
 });
 
-let storageItemPii = browser.storage.local.get('pii');
+const storageItemPii = browser.storage.local.get('pii');
 storageItemPii.then((res) => {
     if(res.pii){
         res.pii.split(",").forEach( temp =>{ data.push(temp); });

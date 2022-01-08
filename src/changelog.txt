@@ -1,3 +1,6 @@
+v1.6.2
+- Minor performance improvements
+- More code cleanup
 
 v1.6.1
 - Added Facebook back to supported pages
