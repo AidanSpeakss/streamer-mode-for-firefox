@@ -1,4 +1,5 @@
 let data = [];
+let tabTitle = document.title;
 
 function getElementsByXPath(xpath){
     let results = [];
@@ -13,6 +14,7 @@ function piiSearch(ele){
         if(ele.textContent.toLowerCase().includes(pii.toLowerCase())) {
             const regEx = new RegExp(pii, "ig");
             ele.textContent = ele.textContent.replace(regEx, "");
+            document.title.replace(regEx, "");
         }
     })
 }
