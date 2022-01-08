@@ -30,7 +30,6 @@ Add to Opera:
 ## Known Issues:
 - Must be updated when new unsupported sites are reported (and manaully updated on Chrome/Opera).  
 - Tab title is still visible during load, leaking personal information contained in the title.
-- Doesn't work on most Google products (working on fixes for this ASAP)
 - PII can be determined by looking for what text is changed (credit: u/cn0MMnb)
 
 ## Upcoming Updates:
@@ -44,7 +43,11 @@ Add to Opera:
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
 # Changelog:
-**(NEW) v1.6.3**
+**(NEW) v1.6.4**
+- Fixed issue with Google Docs breaking by modifying CSS, still unsupported though
+- Fixed YouTube.com breaking with the extension
+
+**v1.6.3**
 - Added specific check for document title
 - Added YouTube to unsupported sites (Google products have a weird bug I need to look into)
 
