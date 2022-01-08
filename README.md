@@ -11,6 +11,14 @@ Add to Chrome:
 3. Enable "Developer Mode"
 4. Select "Load unpacked" and select the folder where the files you just extracted are.
 
+Add to Opera:
+1. Download the .zip file from /chromesrc in this repository.
+2. Extract the files into their own folder.
+2. Go to opera://extensions/
+3. Enable "Developer Mode"
+4. Select "Load unpacked" and select the folder where the files you just extracted are.
+
+
 *Note: Make sure your select the folder containing the extension files (i.e. manifest.json, background.js) not a folder containing that folder.*
 
 ## Features:
@@ -20,10 +28,13 @@ Add to Chrome:
 - Warns users if a page is not fully supported by the extension, to prevent them from accidently leaking their information.
 
 ## Known Issues:
-- Must be manaully updated when new unsupported sites are reported.  
+- Must be updated when new unsupported sites are reported (and manaully updated on Chrome/Opera).  
 - Tab title is still visible during load, leaking personal information contained in the title.
+- Doesn't work on most Google products (working on fixes for this ASAP)
+- PII can be determined by looking for what text is changed (credit: u/cn0MMnb)
 
 ## Upcoming Updates:
+- Implement feature to add randomly generated PII to user settings, to make determining which PII is accurate to the user very difficult.
 - Find and implement workaround to hide tab title during load.
 - External site for unsupported URL's and module to check site every 24 hours for new unsupported URL's and store them in browser storage
 - Button to toggle tool on/off
@@ -32,13 +43,12 @@ Add to Chrome:
 - Experimental feature to hide the window from capture software (being worked on by: https://github.com/ConniBug)  
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
-
-
-
-
 # Changelog:
+**(NEW) v1.6.3**
+- Added specific check for document title
+- Added YouTube to unsupported sites (Google products have a weird bug I need to look into)
 
-**(NEW) v1.6.2:**
+**v1.6.2:**
 - Minor performance improvements
 - More code cleanup
 
