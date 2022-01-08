@@ -39,12 +39,10 @@ Add to Chrome:
 # Changelog:
 
 **(NEW) v1.6.2:**
-- Added Facebook back to supported pages
-- Added Google docs to unsupported sites
-- Minor code cleanup/improvements
+- Minor performance improvements
+- More code cleanup
 
-
-**(NEW) v1.6.1:**
+**v1.6.1:**
 - Added Facebook back to supported pages
 - Added Google docs to unsupported sites
 - Minor code cleanup/improvements
