@@ -19,7 +19,7 @@ Add to Opera:
 4. Select "Load unpacked" and select the folder where the files you just extracted are.
 
 
-*Note: Make sure your select the folder containing the extension files (i.e. manifest.json, background.js) not a folder containing that folder.*
+*Note: Make sure you're selecting the folder containing the extension files (i.e. manifest.json, background.js) not a folder containing that folder.*
 
 ## Features:
 - Ensures pages do not display your personal information, EVEN while and before loading.
