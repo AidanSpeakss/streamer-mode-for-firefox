@@ -1,4 +1,8 @@
 Thanks for the support! <3
+
+(NEW) v1.6.41
+- Added https://coronavirus.data.gov.uk/ to unsupported sites, until whitelist feature is added
+
 v1.6.4
 - Fixed issue with Google Docs breaking by modifying CSS, still unsupported though
 - Fixed YouTube.com breaking with the extension
