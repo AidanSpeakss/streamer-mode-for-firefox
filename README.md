@@ -1,5 +1,5 @@
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/Speakss/streamer-mode-for-firefox.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Speakss/streamer-mode-for-firefox/alerts/)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/AidanSpeakss/streamer-mode-for-firefox.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/AidanSpeakss/streamer-mode-for-firefox/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/AidanSpeakss/streamer-mode-for-firefox.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/AidanSpeakss/streamer-mode-for-firefox/context:javascript)
 # Streamer Mode for Firefox
 Hides personal information from pages, similar to Discord's Streamer mode.
 
