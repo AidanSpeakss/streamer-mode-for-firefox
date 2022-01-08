@@ -33,18 +33,23 @@ Add to Opera:
 - PII can be determined by looking for what text is changed (Credit: u/cn0MMnb)
 
 ## Upcoming Updates:
+
+- Option to add sites to a whitelist (Currently being worked on)
+
 - Regex support (i.e. [0-9][0-9][0-9]\ Street\ Name) (Credit: u/VKNiLive)
 - Implement feature to add randomly generated PII to user settings, to make determining which PII is accurate to the user very difficult.
 - Find and implement workaround to hide tab title during load.
 - External site for unsupported URL's and module to check site every 24 hours for new unsupported URL's and store them in browser storage
 - Button to toggle tool on/off
-- Option to add sites to a whitelist
 - Option to specify a word to replace personal information with (Ex: Redacted)
 - Experimental feature to hide the window from capture software (being worked on by: https://github.com/ConniBug)  
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
 # Changelog:
-**(NEW) v1.6.4**
+**(NEW) v1.6.41**
+- Added https://coronavirus.data.gov.uk/ to unsupported sites, until whitelist feature is added
+
+**v1.6.4**
 - Fixed issue with Google Docs breaking by modifying CSS, still unsupported though
 - Fixed YouTube.com breaking with the extension
 
