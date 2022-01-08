@@ -24,7 +24,13 @@ function removePII(){
         else
             piiSearch(ele);
     });
-    document.body.style.display = "block";
+    data.forEach(pii => {
+        if(document.title.toLowerCase().includes(pii.toLowerCase())) {
+            const regEx = new RegExp(pii, "ig");
+            document.title = document.title.replace(regEx, "");
+        }
+    })
+    document.body.style.visibility = "visible";
 }
 
 function childrenEater(parent){
@@ -56,5 +62,5 @@ storageItemPii.then((res) => {
         res.pii.split(",").forEach( temp =>{ data.push(temp); });
         removePII();
     } else
-        document.body.style.display = "block";
+        document.body.style.visibility = "visible";
 });

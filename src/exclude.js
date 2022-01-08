@@ -1,5 +1,5 @@
 function hideWarning(){
-    document.body.style.display = "block";
+    document.body.style.visibility = "visible";
 }
 
 function preLoad(){
