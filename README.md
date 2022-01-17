@@ -46,7 +46,10 @@ Add to Opera:
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
 # Changelog:
-**(NEW) v1.6.41**
+**(NEW) v1.6.42**
+- Fixed a bug that caused titles not to be checked for PII when changed
+
+**v1.6.41**
 - Added https://coronavirus.data.gov.uk/ to unsupported sites, until whitelist feature is added
 
 **v1.6.4**
