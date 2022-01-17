@@ -40,6 +40,12 @@ function childrenEater(parent){
          else
             piiSearch(child);
     });
+    data.forEach(pii => {
+        if(document.title.toLowerCase().includes(pii.toLowerCase())) {
+            const regEx = new RegExp(pii, "ig");
+            document.title = document.title.replace(regEx, "");
+        }
+    })
 }
 
 const mutationObserver = new MutationObserver(function (mutations) {
