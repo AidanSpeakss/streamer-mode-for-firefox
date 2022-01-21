@@ -11,6 +11,7 @@ function insertionSort(inputArr){
         }
         inputArr[j + 1] = key;
     }
+    data = inputArr;
 };
 
 function getElementsByXPath(xpath){

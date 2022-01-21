@@ -1,9 +1,11 @@
 Thanks for the support! <3
+(NEW) v1.6.51
+- Fixed bug in the implementation of another bug fix
 
-(NEW) v1.6.5
+v1.6.5
 - Fixed a bug that caused only partial PII in some instances
 
-(NEW) v1.6.42
+v1.6.42
 - Fixed a bug that caused titles not to be checked for PII when changed
 
 v1.6.41
