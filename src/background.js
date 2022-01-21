@@ -1,5 +1,18 @@
 let data = [];
 
+function insertionSort(inputArr){
+    let length = inputArr.length;
+    for (let i = 1; i < length; i++) {
+        let key = inputArr[i];
+        let j = i - 1;
+        while (j >= 0 && inputArr[j].length < key.length) {
+            inputArr[j + 1] = inputArr[j];
+            j = j - 1;
+        }
+        inputArr[j + 1] = key;
+    }
+};
+
 function getElementsByXPath(xpath){
     let results = [];
     const query = document.evaluate(xpath,  document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
@@ -37,7 +50,7 @@ function childrenEater(parent){
     parent.childNodes.forEach( child => {
         if (child.hasChildNodes())
             childrenEater(child);
-         else
+        else
             piiSearch(child);
     });
     data.forEach(pii => {
@@ -63,9 +76,12 @@ mutationObserver.observe(document.body, {
 });
 
 const storageItemPii = browser.storage.local.get('pii');
-storageItemPii.then((res) => {
-    if(res.pii){
-        res.pii.split(",").forEach( temp =>{ data.push(temp); });
+storageItemPii.then(async (res) => {
+    if (res.pii) {
+        res.pii.split(",").forEach(temp => {
+            data.push(temp);
+        });
+        await insertionSort(data);
         removePII();
     } else
         document.body.style.visibility = "visible";

@@ -1,6 +1,12 @@
 Thanks for the support! <3
 
-(NEW) v1.6.41
+(NEW) v1.6.5
+- Fixed a bug that caused only partial PII in some instances
+
+(NEW) v1.6.42
+- Fixed a bug that caused titles not to be checked for PII when changed
+
+v1.6.41
 - Added https://coronavirus.data.gov.uk/ to unsupported sites, until whitelist feature is added
 
 v1.6.4
