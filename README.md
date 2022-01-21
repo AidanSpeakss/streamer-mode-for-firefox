@@ -46,7 +46,10 @@ Add to Opera:
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
 # Changelog:
-**(NEW) v1.6.5**
+**(NEW) v1.6.51**
+- Fixed bug in the implementation of another bug fix
+
+**v1.6.5**
 - Fixed a bug that caused only partial PII to be removed in some instances
 
 **v1.6.42**
