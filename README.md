@@ -45,6 +45,10 @@ Add to Opera:
 - Experimental feature to hide the window from capture software (being worked on by: https://github.com/ConniBug)  
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
+# Donate:
+XMR: 43nkfFVcUFXNDYbZAHeqDt8Apjopj6nYp13VZT2z5XnJ5hU9Y1UQDR6fi9BbPnRV4ZU45npsfNXdjFtEYK17jS72NRGyYLp
+Buy Me A Coffee: https://www.buymeacoffee.com/devaidan
+
 # Changelog:
 **(NEW) v1.6.51**
 - Fixed bug in the implementation of another bug fix
