@@ -35,7 +35,7 @@ Add to Opera:
 ## Upcoming Updates:
 
 - Option to add sites to a whitelist (Currently being worked on)
-
+- Add a counter to the extension icon in the toolbar, showing how much personal information was removed.
 - Regex support (i.e. [0-9][0-9][0-9]\ Street\ Name) (Credit: u/VKNiLive)
 - Implement feature to add randomly generated PII to user settings, to make determining which PII is accurate to the user very difficult.
 - Find and implement workaround to hide tab title during load.
