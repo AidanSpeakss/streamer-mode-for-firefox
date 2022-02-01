@@ -46,8 +46,8 @@ Add to Opera:
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
 # Donate:
-XMR: 43nkfFVcUFXNDYbZAHeqDt8Apjopj6nYp13VZT2z5XnJ5hU9Y1UQDR6fi9BbPnRV4ZU45npsfNXdjFtEYK17jS72NRGyYLp
-Buy Me A Coffee: https://www.buymeacoffee.com/devaidan
+**XMR:** 43nkfFVcUFXNDYbZAHeqDt8Apjopj6nYp13VZT2z5XnJ5hU9Y1UQDR6fi9BbPnRV4ZU45npsfNXdjFtEYK17jS72NRGyYLp  
+**Buy Me A Coffee:** https://www.buymeacoffee.com/devaidan
 
 # Changelog:
 **(NEW) v1.6.51**
