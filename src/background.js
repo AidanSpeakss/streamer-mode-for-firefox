@@ -14,6 +14,15 @@ function insertionSort(inputArr){
     data = inputArr;
 };
 
+function replaceText(data, textObj) {
+    data.forEach(pii => {
+        if(textObj.toLowerCase().includes(pii.toLowerCase())) {
+            const regEx = new RegExp(pii, "ig");
+            textObj = textObj.replace(regEx, "");
+        } 
+    })
+}
+
 function getElementsByXPath(xpath){
     let results = [];
     const query = document.evaluate(xpath,  document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
@@ -23,12 +32,7 @@ function getElementsByXPath(xpath){
 }
 
 function piiSearch(ele){
-    data.forEach(pii => {
-        if(ele.textContent.toLowerCase().includes(pii.toLowerCase())) {
-            const regEx = new RegExp(pii, "ig");
-            ele.textContent = ele.textContent.replace(regEx, "");
-        }
-    })
+    replaceText(data, ele.textContent)
 }
 
 function removePII(){
@@ -38,12 +42,7 @@ function removePII(){
         else
             piiSearch(ele);
     });
-    data.forEach(pii => {
-        if(document.title.toLowerCase().includes(pii.toLowerCase())) {
-            const regEx = new RegExp(pii, "ig");
-            document.title = document.title.replace(regEx, "");
-        }
-    })
+    replaceText(data, document.title)
     document.body.style.visibility = "visible";
 }
 
@@ -54,12 +53,7 @@ function childrenEater(parent){
         else
             piiSearch(child);
     });
-    data.forEach(pii => {
-        if(document.title.toLowerCase().includes(pii.toLowerCase())) {
-            const regEx = new RegExp(pii, "ig");
-            document.title = document.title.replace(regEx, "");
-        }
-    })
+    replaceText(data, document.title)
 }
 
 const mutationObserver = new MutationObserver(function (mutations) {
