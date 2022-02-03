@@ -59,6 +59,7 @@ Add to Opera:
 - Fix special characters breaking some pages (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/4)
 - Added support for Regular Expressions (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/6)
 - Add whitelist feature (in-progress, sorry for the delay, I am a student and have other priorities)  
+- Frontend design improvements
 
 **(LATEST) v1.6.51**
 - Fixed bug in the implementation of another bug fix
