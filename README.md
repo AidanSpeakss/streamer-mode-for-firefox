@@ -51,6 +51,10 @@ Add to Opera:
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
 # Changelog:
+**v1.7.0** - Update in progress
+- Performance improvements, removed unneccessary if statement  (https://github.com/AidanSpeakss/streamer-mode-for-firefox/pull/9)
+- Add whitelist feature (in-progress, sorry for the delay, I am a student and have other priorities)
+
 **(NEW) v1.6.51**
 - Fixed bug in the implementation of another bug fix
 
