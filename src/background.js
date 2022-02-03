@@ -117,7 +117,7 @@ async function getData(){
         }
     });
     /*|| window.location.protocol == "file:" / Used for dev testing, uncomment out to use test files*/
-    if(!whitelist.includes(window.location.hostname) || window.location.protocol == "file:")
+    if(!whitelist.includes(new URL(window.location.href).host) || window.location.protocol == "file:")
         removePII();
     else
         document.body.style.visibility = "visible";
