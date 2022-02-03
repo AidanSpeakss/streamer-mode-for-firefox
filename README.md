@@ -45,11 +45,11 @@ Add to Opera:
 - Option to add sites to a whitelist (Currently being worked on)
 - Add a counter to the extension icon in the toolbar, showing how much personal information was removed.
 - Regex support (i.e. [0-9][0-9][0-9]\ Street\ Name) (Credit: u/VKNiLive)
+- Ability to choose different ways to handle the PII: spoiler like in Discord, replace the text with a word, remove it all together, or specify a word to replace it with (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/7)
 - Implement feature to add randomly generated PII to user settings, to make determining which PII is accurate to the user very difficult.
 - Find and implement workaround to hide tab title during load.
 - External site for unsupported URL's and module to check site every 24 hours for new unsupported URL's and store them in browser storage
 - Button to toggle tool on/off
-- Option to specify a word to replace personal information with (Ex: Redacted)
 - Experimental feature to hide the window from capture software (being worked on by: https://github.com/ConniBug)  
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
