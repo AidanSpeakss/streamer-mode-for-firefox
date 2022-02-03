@@ -1,6 +1,9 @@
 # Streamer Mode for Firefox
 Hides personal information from pages, similar to Discord's Streamer mode.
 
+# Explanation:
+When people are sharing their screen on Discord, Zoom, or even on sites like Twitch.tv. They often use their browser to react to videos, present information, play a game, etc. And if they visit a page that displays their fullname, email, or some other type of personal information, that information is visible to the stream and there is nothing they can do to stop it. That information can then be used to spam, dox, and harrass a streamer or a user of these platforms. Platforms like Discord have a built in 'Streamer Mode' that hides personal information on Discord. But these modes don't protect users when they are streaming their browser. Other sites or platforms could still display personal information and up until recently there was no tool to protect users. This extension is the tool that solves these problems. With it, you can prevent your information from getting in the hands of people that shouldn't have ever had it; by preemptively removing that information from pages, before those pages are even visible.
+
 # Donate:
 **XMR:** 43nkfFVcUFXNDYbZAHeqDt8Apjopj6nYp13VZT2z5XnJ5hU9Y1UQDR6fi9BbPnRV4ZU45npsfNXdjFtEYK17jS72NRGyYLp  
 **Buy Me A Coffee:** https://www.buymeacoffee.com/devaidan
