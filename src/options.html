@@ -5,9 +5,13 @@
 </head>
 <body>
 <p>Personal Information: <b style="color: grey" id="managed-pii">Nothing Yet</b></p>
+<p>RegEX: <b style="color: grey" id="managed-regex-pii">Nothing Yet</b></p>
 <form>
     <label>Text to look for, seperated by comma's.</label>
     <input placeholder="John Doe" type="text" id="pii">
+    <br>
+    <label>RegEx to look for, seperated by comma's.</label>
+    <input placeholder="John[0-9]" type="text" id="regex-pii">
     <button type="submit">Save</button>
 </form>
 <script src="options.js"></script>

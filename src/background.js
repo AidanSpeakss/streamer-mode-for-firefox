@@ -1,4 +1,9 @@
 let data = [];
+let regexdata = [];
+
+function escapeRegExp(text) {
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+}
 
 function insertionSort(inputArr){
     let length = inputArr.length;
@@ -11,7 +16,7 @@ function insertionSort(inputArr){
         }
         inputArr[j + 1] = key;
     }
-    data = inputArr;
+    return inputArr;
 };
 
 function getElementsByXPath(xpath){
@@ -23,9 +28,16 @@ function getElementsByXPath(xpath){
 }
 
 function piiSearch(ele){
+
     data.forEach(pii => {
-        const regEx = new RegExp(pii, "ig");
-        ele.textContent = ele.textContent.replace(regEx, "");
+        let temp = escapeRegExp(pii);
+        console.log(temp);
+        const regExEscaped = new RegExp(temp, "ig");
+        ele.textContent = ele.textContent.replace(regExEscaped, "");
+    })
+    regexdata.forEach(regex => {
+        const regexp = new RegExp(regex, "ig");
+        ele.textContent = ele.textContent.replace(regexp, "");
     })
 }
 
@@ -37,8 +49,12 @@ function removePII(){
             piiSearch(ele);
     });
     data.forEach(pii => {
-        const regEx = new RegExp(pii, "ig");
+        const regEx = new RegExp(escapeRegExp(pii), "ig");
         document.title = document.title.replace(regEx, "");
+    })
+    regexdata.forEach(regex => {
+        const regexp = new RegExp(regex, "ig");
+        document.title = document.title.replace(regexp, "");
     })
     document.body.style.visibility = "visible";
 }
@@ -51,8 +67,12 @@ function childrenEater(parent){
             piiSearch(child);
     });
     data.forEach(pii => {
-        const regEx = new RegExp(pii, "ig");
+        const regEx = new RegExp(escapeRegExp(pii), "ig");
         document.title = document.title.replace(regEx, "");
+    })
+    regexdata.forEach(regex => {
+        const regexp = new RegExp(regex, "ig");
+        document.title = document.title.replace(regexp, "");
     })
 }
 
@@ -70,14 +90,25 @@ mutationObserver.observe(document.body, {
     subtree: true
 });
 
-const storageItemPii = browser.storage.local.get('pii');
-storageItemPii.then(async (res) => {
-    if (res.pii) {
-        res.pii.split(",").forEach(temp => {
-            data.push(temp);
-        });
-        await insertionSort(data);
-        removePII();
-    } else
-        document.body.style.visibility = "visible";
-});
+async function getData(){
+    const storageItemPii = browser.storage.local.get('pii');
+    await storageItemPii.then(async (res) => {
+        if (res.pii) {
+            res.pii.split(",").forEach(temp => {
+                data.push(temp);
+            });
+            data = insertionSort(data);
+        }
+    });
+    const storageItemRegexPii = browser.storage.local.get('regexpii');
+    await storageItemRegexPii.then(async (res) => {
+        if (res.regexpii) {
+            res.regexpii.split(",").forEach(temp => {
+                regexdata.push(temp);
+            });
+            regexdata = insertionSort(regexdata);
+        }
+    })
+    removePII();
+}
+getData();
