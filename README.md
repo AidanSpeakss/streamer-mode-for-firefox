@@ -38,7 +38,7 @@ Add to Opera:
 - PII can be determined by looking for what text is changed (Credit: u/cn0MMnb)
 
 ## Upcoming Updates:
-
+**Status of Whitelist Feature:** Ability to manaully specify whitelisted domains in the options is added, and the whitelist is functional. I am just implementing a "Add site to whitelist" button now.
 - Option to add sites to a whitelist (Currently being worked on)
 - Add a counter to the extension icon in the toolbar, showing how much personal information was removed.
 - Regex support (i.e. [0-9][0-9][0-9]\ Street\ Name) (Credit: u/VKNiLive)
@@ -56,7 +56,6 @@ Add to Opera:
 - Fix special characters breaking some pages (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/4)
 - Added support for Regular Expressions (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/6)
 - Add whitelist feature (in-progress, sorry for the delay, I am a student and have other priorities)  
-**Status of Whitelist Feature:** Ability to manaully specify whitelisted domains in the options is added, and the whitelist is functional. I am just implementing a "Add site to whitelist" button now.
 
 **(LATEST) v1.6.51**
 - Fixed bug in the implementation of another bug fix
