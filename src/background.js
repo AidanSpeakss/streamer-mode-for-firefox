@@ -1,5 +1,6 @@
 let data = [];
 let regexdata = [];
+let whitelist = [];
 
 function escapeRegExp(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
@@ -28,16 +29,13 @@ function getElementsByXPath(xpath){
 }
 
 function piiSearch(ele){
-
-    data.forEach(pii => {
-        let temp = escapeRegExp(pii);
-        console.log(temp);
-        const regExEscaped = new RegExp(temp, "ig");
-        ele.textContent = ele.textContent.replace(regExEscaped, "");
-    })
     regexdata.forEach(regex => {
         const regexp = new RegExp(regex, "ig");
         ele.textContent = ele.textContent.replace(regexp, "");
+    })
+    data.forEach(pii => {
+        const regExEscaped = new RegExp(escapeRegExp(pii), "ig");
+        ele.textContent = ele.textContent.replace(regExEscaped, "");
     })
 }
 
@@ -48,13 +46,13 @@ function removePII(){
         else
             piiSearch(ele);
     });
-    data.forEach(pii => {
-        const regEx = new RegExp(escapeRegExp(pii), "ig");
-        document.title = document.title.replace(regEx, "");
-    })
     regexdata.forEach(regex => {
         const regexp = new RegExp(regex, "ig");
         document.title = document.title.replace(regexp, "");
+    })
+    data.forEach(pii => {
+        const regEx = new RegExp(escapeRegExp(pii), "ig");
+        document.title = document.title.replace(regEx, "");
     })
     document.body.style.visibility = "visible";
 }
@@ -66,13 +64,13 @@ function childrenEater(parent){
         else
             piiSearch(child);
     });
-    data.forEach(pii => {
-        const regEx = new RegExp(escapeRegExp(pii), "ig");
-        document.title = document.title.replace(regEx, "");
-    })
     regexdata.forEach(regex => {
         const regexp = new RegExp(regex, "ig");
         document.title = document.title.replace(regexp, "");
+    })
+    data.forEach(pii => {
+        const regEx = new RegExp(escapeRegExp(pii), "ig");
+        document.title = document.title.replace(regEx, "");
     })
 }
 
@@ -109,6 +107,19 @@ async function getData(){
             regexdata = insertionSort(regexdata);
         }
     })
-    removePII();
+    const storageItemWhitelist = browser.storage.local.get('whitelist');
+    await storageItemWhitelist.then(async (res) => {
+        if (res.whitelist){
+            res.whitelist.split(",").forEach(temp => {
+                whitelist.push(temp);
+            });
+            whitelist = insertionSort(whitelist);
+        }
+    });
+    /*|| window.location.protocol == "file:" / Used for dev testing, uncomment out to use test files*/
+    if(!whitelist.includes(window.location.hostname) || window.location.protocol == "file:")
+        removePII();
+    else
+        document.body.style.visibility = "visible";
 }
 getData();

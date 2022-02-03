@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta charset="utf-8">
+    <style>
+        html {
+            font-family: 'Montserrat', sans-serif;
+        }
+        p {
+            display: block;
+            margin: 5px;
+        }
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .flexbox2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+        }
+        input {
+            margin-bottom: 5px;
+        }
+        button {
+            border-radius: 5%;
+            border: 0.5px lightgray solid;
+            padding: 5px;
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
-<p>Personal Information: <b style="color: grey" id="managed-pii">Nothing Yet</b></p>
-<p>RegEX: <b style="color: grey" id="managed-regex-pii">Nothing Yet</b></p>
+<div class="flexbox">
+    <p>Personal Information: <br><textarea rows="3" cols="30" readonly placeholder="Nothing Yet" id="managed-pii"></textarea></p>
+</div>
+<div class="flexbox">
+    <p>RegEX: <br><textarea rows="3" cols="30" readonly placeholder="Nothing Yet" id="managed-regex-pii"></textarea></p>
+</div>
+<div class="flexbox">
+    <p>Whitelist: <br><textarea rows="3" cols="30" readonly placeholder="Nothing Yet" id="managed-whitelist"></textarea></p>
+</div>
 <form>
-    <label>Text to look for, seperated by comma's.</label>
-    <input placeholder="John Doe" type="text" id="pii">
-    <br>
-    <label>RegEx to look for, seperated by comma's.</label>
-    <input placeholder="John[0-9]" type="text" id="regex-pii">
+    <div class="flexbox2">
+        <label>Text to look for, seperated by comma's.</label>
+        <input placeholder="John Doe, 123 Example St" type="text" id="pii">
+    </div>
+    <div class="flexbox2">
+        <label>RegEx, seperated by comma's.</label>
+        <input placeholder="John[0-9], \d{3} Example St" type="text" id="regex-pii">
+    </div>
+    <div class="flexbox2">
+        <div>
+            <label>Whitelisted Sites</label>
+            <br>
+            <label style="font-size:12px;">Format: www.domain-name.com (Must have the www.)</label>
+        </div>
+
+        <input placeholder="www.google.com, www.facebook.com" type="text" id="whitelist">
+    </div>
     <button type="submit">Save</button>
 </form>
 <script src="options.js"></script>

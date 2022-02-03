@@ -1,5 +1,12 @@
 Thanks for the support! <3
-(NEW) v1.6.51
+v1.7
+- Performance improvements, removed unneccessary if-statement (https://github.com/AidanSpeakss/streamer-mode-for-firefox/pull/9)
+- Fix special characters breaking some pages (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/4)
+- Added support for Regular Expressions (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/6)
+- Added whitelist feature
+- Improvements to front-end design
+
+v1.6.51
 - Fixed bug in the implementation of another bug fix
 
 v1.6.5
