@@ -53,6 +53,8 @@ Add to Opera:
 # Changelog:
 **(UPCOMING) v1.7.0**
 - Performance improvements, removed unneccessary if-statement  (https://github.com/AidanSpeakss/streamer-mode-for-firefox/pull/9)
+- Fix special characters breaking some pages (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/4)
+- Added support for Regular Expressions (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/6)
 - Add whitelist feature (in-progress, sorry for the delay, I am a student and have other priorities)
 
 **(LATEST) v1.6.51**
