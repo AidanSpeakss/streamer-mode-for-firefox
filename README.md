@@ -55,7 +55,7 @@ Add to Opera:
 - Performance improvements, removed unneccessary if-statement  (https://github.com/AidanSpeakss/streamer-mode-for-firefox/pull/9)
 - Add whitelist feature (in-progress, sorry for the delay, I am a student and have other priorities)
 
-**(NEW) v1.6.51**
+**(LATEST) v1.6.51**
 - Fixed bug in the implementation of another bug fix
 
 **v1.6.5**
