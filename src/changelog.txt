@@ -1,9 +1,13 @@
 Thanks for the support! <3
+v1.7.1
+- Fixed issue causing patron to break
+- Improved the overlay for unsupported pages
+
 v1.7
-- Performance improvements, removed unneccessary if-statement (https://github.com/AidanSpeakss/streamer-mode-for-firefox/pull/9)
+- Performance improvements, removed unnecessary if-statement (https://github.com/AidanSpeakss/streamer-mode-for-firefox/pull/9)
 - Fix special characters breaking some pages (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/4)
 - Added support for Regular Expressions (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/6)
-- Added whitelist feature
+- Added whitelist feature (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/5)
 - Improvements to front-end design
 
 v1.6.51

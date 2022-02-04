@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Streamer Mode for Firefox",
-  "version": "1.7",
+  "version": "1.7.1",
   "developer": {
     "name": "Aidan Raney",
     "url": "https://devaidan.com/"

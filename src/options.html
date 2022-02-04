@@ -29,6 +29,8 @@
             margin-bottom: 5px;
         }
         button {
+            display: inline-block;
+            margin: 5px;
             border-radius: 5%;
             border: 0.5px lightgray solid;
             padding: 5px;
@@ -59,12 +61,16 @@
         <div>
             <label>Whitelisted Sites</label>
             <br>
-            <label style="font-size:12px;">Format: www.domain-name.com (Must have the www.)</label>
+            <label style="font-size:12px;">Formats: www.domain-name.com,</label>
+            <br>
+            <label style="font-size:12px;">domain-name.com, or</label>
+            <br>
+            <label style="font-size:12px;">subdomain.domain-name.com</label>
         </div>
-
         <input placeholder="www.google.com, www.facebook.com" type="text" id="whitelist">
     </div>
     <button type="submit">Save</button>
+    <button type="button" id="addSite">Add current site to whitelist</button>
 </form>
 <script src="options.js"></script>
 </body>

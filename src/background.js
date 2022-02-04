@@ -54,7 +54,15 @@ function removePII(){
         const regEx = new RegExp(escapeRegExp(pii), "ig");
         document.title = document.title.replace(regEx, "");
     })
-    document.body.style.visibility = "visible";
+    let style = document.createElement('style');
+    style.innerHTML = `
+      body {
+        visibility: visible !important;
+      }
+    `;
+    style.id = "stramerModeStyles";
+    console.log(style);
+    document.head.appendChild(style);
 }
 
 function childrenEater(parent){
@@ -88,7 +96,7 @@ mutationObserver.observe(document.body, {
     subtree: true
 });
 
-async function getData(){
+async function getData() {
     const storageItemPii = browser.storage.local.get('pii');
     await storageItemPii.then(async (res) => {
         if (res.pii) {
@@ -109,7 +117,7 @@ async function getData(){
     })
     const storageItemWhitelist = browser.storage.local.get('whitelist');
     await storageItemWhitelist.then(async (res) => {
-        if (res.whitelist){
+        if (res.whitelist) {
             res.whitelist.split(",").forEach(temp => {
                 whitelist.push(temp);
             });
@@ -117,9 +125,17 @@ async function getData(){
         }
     });
     /*|| window.location.protocol == "file:" / Used for dev testing, uncomment out to use test files*/
-    if(!whitelist.includes(new URL(window.location.href).host) || window.location.protocol == "file:")
+    if (!whitelist.includes(new URL(window.location.href).host) || window.location.protocol == "file:")
         removePII();
-    else
-        document.body.style.visibility = "visible";
+    else {
+        let style = document.createElement('style');
+        style.innerHTML = `
+          body {
+            visibility: visible !important;
+          }
+        `;
+        style.id = "stramerModeStyles";
+        document.head.appendChild(style);
+    }
 }
 getData();
