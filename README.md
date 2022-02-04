@@ -52,7 +52,7 @@ Add to Opera:
 
 # Changelog:
 **(LATEST) v1.7.1**
-- Fixed issue causing patron to break
+- Fixed issue causing patreon to break
 - Improved the overlay for unsupported pages
 
 **v1.7.0**
