@@ -51,7 +51,11 @@ Add to Opera:
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
 # Changelog:
-**(LATEST) v1.7.0**
+**(LATEST) v1.7.1**
+- Fixed issue causing patron to break
+- Improved the overlay for unsupported pages
+
+**v1.7.0**
 - Performance improvements, removed unneccessary if-statement  (https://github.com/AidanSpeakss/streamer-mode-for-firefox/pull/9)
 - Fixed special characters breaking some pages (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/4)
 - Added support for Regular Expressions (https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues/6)
