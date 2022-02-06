@@ -11,23 +11,7 @@ When people are sharing their screen on Discord, Zoom, or even on sites like Twi
 
 # Installing:
 Add to Firefox: https://addons.mozilla.org/en-US/firefox/addon/streamermode/  
-
-Add to Chrome:
-1. Download the .zip file from /chromesrc in this repository.
-2. Extract the files into their own folder.
-2. Go to chrome://extensions/
-3. Enable "Developer Mode"
-4. Select "Load unpacked" and select the folder where the files you just extracted are.
-
-Add to Opera:
-1. Download the .zip file from /chromesrc in this repository.
-2. Extract the files into their own folder.
-2. Go to opera://extensions/
-3. Enable "Developer Mode"
-4. Select "Load unpacked" and select the folder where the files you just extracted are.
-
-
-*Note: Make sure you're selecting the folder containing the extension files (i.e. manifest.json, background.js) not a folder containing that folder.*
+Add to Chrome/Opera: https://chrome.google.com/webstore/detail/streamer-mode-for-chrome/cpdfpajodamflehhkgmpdhfobjdgfimj
 
 ## Features:
 - Ensures pages do not display your personal information, EVEN while and before loading.
