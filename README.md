@@ -8,7 +8,6 @@ When people are sharing their screen on Discord, Zoom, or even on sites like Twi
 **XMR:** 43nkfFVcUFXNDYbZAHeqDt8Apjopj6nYp13VZT2z5XnJ5hU9Y1UQDR6fi9BbPnRV4ZU45npsfNXdjFtEYK17jS72NRGyYLp  
 **Buy Me A Coffee:** https://www.buymeacoffee.com/devaidan
 
-
 # Installing:
 Add to Firefox: https://addons.mozilla.org/en-US/firefox/addon/streamermode/  
 Add to Chrome/Opera: https://chrome.google.com/webstore/detail/streamer-mode-for-chrome/cpdfpajodamflehhkgmpdhfobjdgfimj
@@ -35,7 +34,14 @@ Add to Chrome/Opera: https://chrome.google.com/webstore/detail/streamer-mode-for
 - Integration with experimental feature to call the window hider while unsupported sites are open.
 
 # Changelog:
-**(LATEST) v1.7.1**
+**(LATEST CHROME) v1.7.1c - (c) Chrome Release**
+- Ported the v1.7.1 Firefox update to Chrome
+- Removed some debugging code from extension
+- Added error message for trying to add an invalid type of page to whitelist
+- Fixed issue causing patron to break
+- Improved the overlay for unsupported pages
+
+**(LATEST FIREFOX) v1.7.1**
 - Fixed issue causing patreon to break
 - Improved the overlay for unsupported pages
 
