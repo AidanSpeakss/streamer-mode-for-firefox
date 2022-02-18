@@ -19,8 +19,9 @@ Add to Chrome/Opera: https://chrome.google.com/webstore/detail/streamer-mode-for
 - Warns users if a page is not fully supported by the extension, to prevent them from accidently leaking their information.
 
 ## Known Issues:
-- Must be updated when new unsupported sites are reported (and manaully updated on Chrome/Opera).  
+- Must be updated when new unsupported sites are added.  
 - Tab title is still visible during load, leaking personal information contained in the title.
+- URL is still visible in the address bar, which could contain personally identifying information
 - PII can be determined by looking for what text is changed (Credit: u/cn0MMnb)
 
 ## Upcoming Updates:
