@@ -7,6 +7,8 @@
         <img src="https://img.shields.io/badge/FYI-Badges%20Are%20Cool-brightgreen" /></a>
     <a alt="GitHub repo size">
         <img src="https://img.shields.io/github/repo-size/AidanSpeakss/streamer-mode-for-firefox" /></a>
+    <a alt="Mozilla Add-on Rating">
+        <img src="https://img.shields.io/amo/stars/streamermode" /></a>
     <a alt="Mozilla Add-on">
         <img src="https://img.shields.io/amo/v/streamermode" /></a>
     <a alt="GitHub language count">
