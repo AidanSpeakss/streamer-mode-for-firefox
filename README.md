@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-    <a alt="FYI">
+    <a href="https://sheilds.io/" alt="FYI">
         <img src="https://img.shields.io/badge/FYI-Badges%20Are%20Cool-brightgreen" /></a>
     <a href="https://chrome.google.com/webstore/detail/streamer-mode-for-chrome/cpdfpajodamflehhkgmpdhfobjdgfimj" alt="Chrome Web Store">
         <img src="https://img.shields.io/chrome-web-store/price/cpdfpajodamflehhkgmpdhfobjdgfimj" /></a>
@@ -11,13 +11,13 @@
         <img src="https://img.shields.io/amo/stars/streamermode" /></a>
     <a href="https://addons.mozilla.org/en-US/firefox/addon/streamermode/" alt="Mozilla Add-on">
         <img src="https://img.shields.io/amo/v/streamermode" /></a>
-    <a alt="Github License">
+    <a href="https://github.com/AidanSpeakss/streamer-mode-for-firefox/blob/main/LICENSE" alt="Github License">
         <img src="https://img.shields.io/github/license/AidanSpeakss/streamer-mode-for-firefox" /></a>
-    <a alt="GitHub language count">
+    <a href="#" alt="GitHub language count">
         <img src="https://img.shields.io/github/languages/count/AidanSpeakss/streamer-mode-for-firefox" /></a>
-    <a alt="GitHub repo size">
+    <a href="#" alt="GitHub repo size">
         <img src="https://img.shields.io/github/repo-size/AidanSpeakss/streamer-mode-for-firefox" /></a>
-    <a alt="GitHub issues">
+    <a href="https://github.com/AidanSpeakss/streamer-mode-for-firefox/issues" alt="GitHub issues">
         <img src="https://img.shields.io/github/issues/AidanSpeakss/streamer-mode-for-firefox" /></a>
     <a href="https://deepscan.io/dashboard#view=project&tid=16925&pid=20233&bid=546943" alt="DeepScan grade">
         <img src="https://deepscan.io/api/teams/16925/projects/20233/branches/546943/badge/grade.svg" /></a>
