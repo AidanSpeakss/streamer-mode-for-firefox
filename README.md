@@ -5,18 +5,18 @@
 <p align="center">
     <a alt="FYI">
         <img src="https://img.shields.io/badge/FYI-Badges%20Are%20Cool-brightgreen" /></a>
-    <a alt="GitHub repo size">
-        <img src="https://img.shields.io/github/repo-size/AidanSpeakss/streamer-mode-for-firefox" /></a>
+    <a alt="Chrome Web Store">
+        <img src="https://img.shields.io/chrome-web-store/price/cpdfpajodamflehhkgmpdhfobjdgfimj" /></a>
     <a alt="Mozilla Add-on Rating">
         <img src="https://img.shields.io/amo/stars/streamermode" /></a>
     <a alt="Mozilla Add-on">
         <img src="https://img.shields.io/amo/v/streamermode" /></a>
     <a alt="GitHub language count">
         <img src="https://img.shields.io/github/languages/count/AidanSpeakss/streamer-mode-for-firefox" /></a>
+    <a alt="GitHub repo size">
+        <img src="https://img.shields.io/github/repo-size/AidanSpeakss/streamer-mode-for-firefox" /></a>
     <a alt="GitHub issues">
         <img src="https://img.shields.io/github/issues/AidanSpeakss/streamer-mode-for-firefox" /></a>
-    <a alt="Chrome Web Store">
-        <img src="https://img.shields.io/chrome-web-store/price/cpdfpajodamflehhkgmpdhfobjdgfimj" /></a>
     <a href="https://deepscan.io/dashboard#view=project&tid=16925&pid=20233&bid=546943" alt="DeepScan grade">
         <img src="https://deepscan.io/api/teams/16925/projects/20233/branches/546943/badge/grade.svg" /></a>
     <a href="https://www.codacy.com/gh/AidanSpeakss/streamer-mode-for-firefox/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AidanSpeakss/streamer-mode-for-firefox&amp;utm_campaign=Badge_Grade" alt="Codacy Badge">
