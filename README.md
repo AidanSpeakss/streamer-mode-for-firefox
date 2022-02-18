@@ -5,7 +5,7 @@
 <p align="center">
     <a alt="FYI">
         <img src="https://img.shields.io/badge/FYI-Badges%20Are%20Cool-brightgreen" /></a>
-    <a alt="Chrome Web Store">
+    <a href="https://chrome.google.com/webstore/detail/streamer-mode-for-chrome/cpdfpajodamflehhkgmpdhfobjdgfimj" alt="Chrome Web Store">
         <img src="https://img.shields.io/chrome-web-store/price/cpdfpajodamflehhkgmpdhfobjdgfimj" /></a>
     <a href="https://addons.mozilla.org/en-US/firefox/addon/streamermode/reviews/" alt="Mozilla Add-on Rating">
         <img src="https://img.shields.io/amo/stars/streamermode" /></a>
