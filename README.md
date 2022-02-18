@@ -11,6 +11,8 @@
         <img src="https://img.shields.io/amo/stars/streamermode" /></a>
     <a alt="Mozilla Add-on">
         <img src="https://img.shields.io/amo/v/streamermode" /></a>
+    <a alt="Github License">
+        <img src="https://img.shields.io/github/license/AidanSpeakss/streamer-mode-for-firefox" /></a>
     <a alt="GitHub language count">
         <img src="https://img.shields.io/github/languages/count/AidanSpeakss/streamer-mode-for-firefox" /></a>
     <a alt="GitHub repo size">
