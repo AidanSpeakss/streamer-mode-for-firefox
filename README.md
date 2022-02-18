@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-    <a href="https://sheilds.io/" alt="FYI">
+    <a href="https://shields.io/" alt="FYI">
         <img src="https://img.shields.io/badge/FYI-Badges%20Are%20Cool-brightgreen" /></a>
     <a href="https://chrome.google.com/webstore/detail/streamer-mode-for-chrome/cpdfpajodamflehhkgmpdhfobjdgfimj" alt="Chrome Web Store">
         <img src="https://img.shields.io/chrome-web-store/price/cpdfpajodamflehhkgmpdhfobjdgfimj" /></a>
