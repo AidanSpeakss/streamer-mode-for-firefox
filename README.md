@@ -1,3 +1,4 @@
+[![DeepScan grade](https://deepscan.io/api/teams/16925/projects/20233/branches/546943/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16925&pid=20233&bid=546943)
 # Streamer Mode for Firefox
 Hides personal information from pages, similar to Discord's Streamer mode.
 
