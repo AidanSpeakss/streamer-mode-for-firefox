@@ -1,4 +1,4 @@
-[![DeepScan grade](https://deepscan.io/api/teams/16925/projects/20233/branches/546943/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16925&pid=20233&bid=546943)[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a8514a4dea04408eb970f8cb265d223d)](https://www.codacy.com/gh/AidanSpeakss/streamer-mode-for-firefox/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AidanSpeakss/streamer-mode-for-firefox&amp;utm_campaign=Badge_Grade)
+https://img.shields.io/badge/FYI-Badges%20Are%20Cool-brightgreen [![DeepScan grade](https://deepscan.io/api/teams/16925/projects/20233/branches/546943/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16925&pid=20233&bid=546943) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/a8514a4dea04408eb970f8cb265d223d)](https://www.codacy.com/gh/AidanSpeakss/streamer-mode-for-firefox/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AidanSpeakss/streamer-mode-for-firefox&amp;utm_campaign=Badge_Grade)
 # Streamer Mode for Firefox
 Hides personal information from pages, similar to Discord's Streamer mode.
 
