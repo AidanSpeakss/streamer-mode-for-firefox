@@ -21,8 +21,6 @@
         <img src="https://img.shields.io/github/issues/AidanSpeakss/streamer-mode-for-firefox" /></a>
     <a href="https://deepscan.io/dashboard#view=project&tid=16925&pid=20233&bid=546943" alt="DeepScan grade">
         <img src="https://deepscan.io/api/teams/16925/projects/20233/branches/546943/badge/grade.svg" /></a>
-    <a href="https://www.codacy.com/gh/AidanSpeakss/streamer-mode-for-firefox/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AidanSpeakss/streamer-mode-for-firefox&amp;utm_campaign=Badge_Grade" alt="Codacy Badge">
-        <img src="https://app.codacy.com/project/badge/Grade/a8514a4dea04408eb970f8cb265d223d" /></a>
 </p>
 
 # Explanation:
