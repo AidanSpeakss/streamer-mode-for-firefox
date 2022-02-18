@@ -8,7 +8,7 @@
     <a href="https://chrome.google.com/webstore/detail/streamer-mode-for-chrome/cpdfpajodamflehhkgmpdhfobjdgfimj" alt="Chrome Web Store">
         <img src="https://img.shields.io/chrome-web-store/price/cpdfpajodamflehhkgmpdhfobjdgfimj" /></a>
     <a href="https://addons.mozilla.org/en-US/firefox/addon/streamermode/reviews/" alt="Mozilla Add-on Rating">
-        <img src="https://img.shields.io/amo/stars/streamermode" /></a>
+        <img src="https://img.shields.io/amo/stars/streamermode?label=Firefox%20Rating" /></a>
     <a href="https://addons.mozilla.org/en-US/firefox/addon/streamermode/" alt="Mozilla Add-on">
         <img src="https://img.shields.io/amo/v/streamermode" /></a>
     <a href="https://github.com/AidanSpeakss/streamer-mode-for-firefox/blob/main/LICENSE" alt="Github License">
