@@ -7,9 +7,9 @@
         <img src="https://img.shields.io/badge/FYI-Badges%20Are%20Cool-brightgreen" /></a>
     <a alt="Chrome Web Store">
         <img src="https://img.shields.io/chrome-web-store/price/cpdfpajodamflehhkgmpdhfobjdgfimj" /></a>
-    <a alt="Mozilla Add-on Rating">
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/streamermode/reviews/" alt="Mozilla Add-on Rating">
         <img src="https://img.shields.io/amo/stars/streamermode" /></a>
-    <a alt="Mozilla Add-on">
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/streamermode/" alt="Mozilla Add-on">
         <img src="https://img.shields.io/amo/v/streamermode" /></a>
     <a alt="Github License">
         <img src="https://img.shields.io/github/license/AidanSpeakss/streamer-mode-for-firefox" /></a>
