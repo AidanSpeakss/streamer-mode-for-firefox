@@ -3,10 +3,10 @@
   "name": "Streamer Mode for Firefox",
   "version": "1.7.1",
   "developer": {
-    "name": "Aidan Raney",
+    "name": "Aidan",
     "url": "https://devaidan.com/"
   },
-  "author": "Aidan Raney",
+  "author": "Aidan",
   "homepage_url": "https://github.com/AidanSpeakss/streamer-mode-for-firefox",
   "description": "Hides personal information from pages, similar to Discord's Streamer mode.",
   "icons": {
