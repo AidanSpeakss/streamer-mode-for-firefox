@@ -32,7 +32,7 @@ When people are sharing their screen on Discord, Zoom, or even on sites like Twi
 **Buy Me A Coffee:** https://www.buymeacoffee.com/devaidan
 
 # Installing:
-Add to Firefox: https://addons.mozilla.org/en-US/firefox/addon/streamermode/  
+Add to Firefox: Must be installed manaully.
 Add to Chrome/Opera: https://chrome.google.com/webstore/detail/streamer-mode-for-chrome/cpdfpajodamflehhkgmpdhfobjdgfimj
 
 ## Features:
